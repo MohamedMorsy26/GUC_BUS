@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    android:scrollbars="vertical"
+    android:background="@color/light_grey"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/circleofflineid"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/status_circle"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:text="Offline"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/circleonlineid"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/status_circle"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:text="Online"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/circlerequestedid"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/status_circle"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="Requested"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/usermenufavouritestextviewid"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="37dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearlayoutid"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="All Buses"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <ListView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/usermenufavouriteslistviewid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usermenufavouritestextviewid"
+        android:layout_marginBottom="44dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        />
+
+</RelativeLayout>
+
+</RelativeLayout>

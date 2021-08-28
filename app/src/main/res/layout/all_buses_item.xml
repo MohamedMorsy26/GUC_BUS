@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/grey">
+        <!--holo red dark-->
+        <TextView
+            android:id="@+id/boibusnumberid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="17"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/boibusrouteid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Bus Route"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/userbusstatusid"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/status_circle"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

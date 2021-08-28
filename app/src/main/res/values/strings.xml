@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GUC BUS</string>
+    <string name="online_channel_name">Bus Online Notification Channel</string>
+    <string name="online_channel_description">This is a channel for notifications that are sent to users
+        when their bus of interest is online</string>
+
+    <string name="share_channel_name">Bus Share Notification Channel</string>
+    <string name="share_channel_description">This is a channel for notifications that are sent to users
+        when their bus of interest is requested to have its location shared</string>
+
+</resources>

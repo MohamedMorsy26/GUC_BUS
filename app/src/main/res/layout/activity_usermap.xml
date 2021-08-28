@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/usermapid"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserMap"
+        />
+
+    <TextView
+        android:id="@+id/usermapbusnumberid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="48sp"
+        android:text="0"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:background="@drawable/button_online"
+        android:id="@+id/usermapstartbutton"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Start broadcasting"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:background="@drawable/button_normal"
+        android:id="@+id/usermaponbusbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="4dp"
+        android:text="I'm on the bus!"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/usermapstartbutton"
+
+        />
+    <Button
+        android:background="@drawable/button_normal"
+        android:id="@+id/usermapshowbus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Where's my bus?"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/usermaponbusbutton"
+        />
+
+</RelativeLayout>
